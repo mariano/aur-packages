@@ -10,10 +10,6 @@ license='custom'
 depends=('java-runtime')
 source=("http://www.dbschema.com/DbSchema.zip" "dbschema")
 
-build(){
-echo
-}
-
 package(){
   install -dm755 ${pkgdir}/opt
   cp -r DbSchema ${pkgdir}/opt/${pkgname}
